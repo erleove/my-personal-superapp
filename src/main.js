@@ -109,6 +109,7 @@ const layout = (container, item) => `
 const routes = [
   { path: "/", view: () => "<h1>Главная</h1><p>Добро пожаловать!</p>" },
   { path: "/base", view: () => layout("container", "item") },
+  { path: "/flex-base", view: () => layout("flex-container", "flex-item") },
   {
     path: "/magazine",
     view: () => layout("magazine-container", "magazine-container-item"),
