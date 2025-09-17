@@ -1,24 +1,137 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+import "./style.css";
+import javascriptLogo from "./javascript.svg";
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
+const layout = (container, item) => `
+  <div class="${container}">
+    <div class="${item}">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+        <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
+        </a>
     </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
+    <div class="${item}">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+        <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
+        </a>
+    </div>
+    <div class="${item}">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+        <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
+        </a>
+    </div>
+    <div class="${item}">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+        <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
+        </a>
+    </div>
+    <div class="${item}">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+        <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
+        </a>
+    </div>
+    <div class="${item}">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+        <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
+        </a>
+    </div>
+    <div class="${item}">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+        <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
+        </a>
+    </div>
+    <div class="${item}">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+        <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
+        </a>
+    </div>
+    <div class="${item}">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+        <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
+        </a>
+    </div>
+    <div class="${item}">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+        <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
+        </a>
+    </div>
+    <div class="${item}">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+        <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
+        </a>
+    </div>
+    <div class="${item}">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+        <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
+        </a>
+    </div>
+    <div class="${item}">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+        <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
+        </a>
+    </div>
+    <div class="${item}">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+        <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
+        </a>
+    </div>
+    <div class="${item}">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+        <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
+        </a>
+    </div>
+    <div class="${item}">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+        <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
+        </a>
+    </div>
+    <div class="${item}">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+        <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
+        </a>
+    </div>
+    <div class="${item}">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+        <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
+        </a>
+    </div>
+    <div class="${item}">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+        <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
+        </a>
+    </div>
+    <div class="${item}">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+        <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
+        </a>
+    </div>
   </div>
-`
+`;
 
-setupCounter(document.querySelector('#counter'))
+const routes = [
+  { path: "/", view: () => "<h1>Главная</h1><p>Добро пожаловать!</p>" },
+  { path: "/base", view: () => layout("container", "item") },
+  {
+    path: "/magazine",
+    view: () => layout("magazine-container", "magazine-container-item"),
+  },
+];
+
+function router() {
+  const match = routes.find((r) => r.path === location.pathname) || routes[0];
+  document.querySelector("#app").innerHTML = match.view();
+}
+
+function navigateTo(url) {
+  history.pushState(null, null, url);
+  router();
+}
+
+document.addEventListener("click", (e) => {
+  if (e.target.matches("[data-link]")) {
+    e.preventDefault();
+    navigateTo(e.target.href);
+  }
+});
+
+window.addEventListener("popstate", router);
+
+router();
