@@ -103,6 +103,31 @@ const layout = (container, item) => `
         <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
         </a>
     </div>
+    <div class="${item}">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+        <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
+        </a>
+    </div>
+    <div class="${item}">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+        <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
+        </a>
+    </div>
+    <div class="${item}">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+        <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
+        </a>
+    </div>
+    <div class="${item}">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+        <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
+        </a>
+    </div>
+    <div class="${item}">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+        <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
+        </a>
+    </div>
   </div>
 `;
 
@@ -111,8 +136,8 @@ const routes = [
   { path: "/base", view: () => layout("container", "item") },
   { path: "/flex-base", view: () => layout("flex-container", "flex-item") },
   {
-    path: "/magazine",
-    view: () => layout("magazine-container", "magazine-container-item"),
+    path: "/insta",
+    view: () => layout("insta-container", "insta-container-item"),
   },
 ];
 
