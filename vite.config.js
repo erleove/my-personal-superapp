@@ -7,4 +7,8 @@ export default defineConfig({
       usePolling: true
     },
   },
+  build: {
+    outDir: './docs',
+    emptyOutDir: true,
+  }
 })
