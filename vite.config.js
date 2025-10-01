@@ -7,5 +7,4 @@ export default defineConfig({
       usePolling: true
     },
   },
-    base: "https://erleove.github.io/my-personal-superapp/",
 })
