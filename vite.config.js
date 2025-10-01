@@ -5,6 +5,7 @@ export default defineConfig({
   server: {
     watch: {
       usePolling: true
-    }
-  }
+    },
+  },
+    base: "https://erleove.github.io/my-personal-superapp/",
 })
