@@ -15,8 +15,6 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
 }
 
 h1 {
@@ -26,9 +24,6 @@ h1 {
 
 #app {
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-  width: 100vw;
 }
 
 .logo.vanilla:hover {
@@ -39,7 +34,7 @@ h1 {
 [class*="item"] img {
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 
@@ -63,36 +58,29 @@ h1 {
 }
 
 .flex-container {
-  width: 100vw;
   display: flex;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
 .flex-item { 
-  box-sizing: border-box;
-  flex-basis: 25vw;
-  padding: 10px
+  flex-basis: 23vw;
+  flex-grow: 1;
 }
 
-.flex-item { 
-  box-sizing: border-box;
-  flex-basis: 25vw;
-  padding: 10px
-}
 
 @media (max-width: 1280px) {
   .flex-item { 
-    box-sizing: border-box;
     flex-basis: 30vw;
-    padding: 10px
+    flex-grow: 1;
+    flex-shrink: 1;
   }
 }
 
 @media (max-width: 480px) {
   .flex-item { 
-    box-sizing: border-box;
     flex-basis: 50vw;
-    padding: 10px
+    flex-shrink: 1;
   }
 }
 

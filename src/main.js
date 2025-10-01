@@ -4,129 +4,79 @@ import javascriptLogo from "./javascript.svg";
 const layout = (container, item) => `
   <div class="${container}">
     <div class="${item}">
-      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
         <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-        </a>
     </div>
     <div class="${item}">
-      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
         <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-        </a>
     </div>
     <div class="${item}">
-      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
         <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-        </a>
     </div>
     <div class="${item}">
-      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
         <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-        </a>
     </div>
     <div class="${item}">
-      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
         <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-        </a>
     </div>
     <div class="${item}">
-      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
         <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-        </a>
     </div>
     <div class="${item}">
-      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
         <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-        </a>
     </div>
     <div class="${item}">
-      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
         <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-        </a>
     </div>
     <div class="${item}">
-      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
         <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-        </a>
     </div>
     <div class="${item}">
-      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
         <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-        </a>
     </div>
     <div class="${item}">
-      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
         <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-        </a>
     </div>
     <div class="${item}">
-      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
         <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-        </a>
     </div>
     <div class="${item}">
-      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
         <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-        </a>
     </div>
     <div class="${item}">
-      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
         <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-        </a>
     </div>
     <div class="${item}">
-      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
         <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-        </a>
     </div>
     <div class="${item}">
-      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
         <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-        </a>
     </div>
     <div class="${item}">
-      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
         <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-        </a>
     </div>
     <div class="${item}">
-      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
         <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-        </a>
     </div>
     <div class="${item}">
-      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
         <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-        </a>
     </div>
     <div class="${item}">
-      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
         <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-        </a>
     </div>
     <div class="${item}">
-      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
         <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-        </a>
     </div>
     <div class="${item}">
-      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
         <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-        </a>
     </div>
     <div class="${item}">
-      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
         <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-        </a>
     </div>
     <div class="${item}">
-      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
         <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-        </a>
     </div>
     <div class="${item}">
-      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
         <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-        </a>
     </div>
   </div>
 `;
