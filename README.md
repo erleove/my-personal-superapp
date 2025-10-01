@@ -15,7 +15,6 @@ This is my personal superapp with mini demo of all i've touched.
 - [ ] React + TypeScript migration
 - [ ] Splitted components and nested file structure
 - [ ] CSS Modules + Sass preprocessor
-- [ ] Auto integration after branch update
 
 ## Scripts for start
 
