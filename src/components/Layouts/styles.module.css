@@ -1,0 +1,99 @@
+:global(:root) {
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+:global(body) {
+  margin: 0;
+}
+
+:global(h1) {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+:global(a) {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+:global(a:hover) {
+  color: #535bf2;
+}
+
+:global(#app) {
+  margin: 0 auto;
+}
+
+/* Если нужно таргетить любые классы, содержащие 'item' */
+:global([class*="item"] img) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Локальные классы */
+.logo.vanilla:hover {
+  filter: drop-shadow(0 0 2em #f7df1eaa);
+}
+
+/* Сетка */
+.gridBase-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+@media (max-width: 1280px) {
+  .gridBase-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .gridBase-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Флекс-сетка */
+.flexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.flexItem { 
+  flex-basis: 23vw;
+  flex-grow: 1;
+}
+
+@media (max-width: 1280px) {
+  .flexItem { 
+    flex-basis: 30vw;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .flexItem { 
+    flex-basis: 50vw;
+    flex-shrink: 1;
+  }
+}
+
+/* Инста-сетка */
+.instaContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+  grid-gap: 32px;
+  grid-auto-flow: dense;
+  min-width: 250px;
+}
+
+.instaContainerItem:nth-child(5n + 2) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
