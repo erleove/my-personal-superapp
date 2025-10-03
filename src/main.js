@@ -93,7 +93,7 @@ const routes = [
 
 function router() {
   const match = routes.find((r) => r.path === location.pathname) || routes[0];
-  document.querySelector("#app").innerHTML = match.view();
+//   document.querySelector("#app").innerHTML = match.view();
 }
 
 function navigateTo(url) {
